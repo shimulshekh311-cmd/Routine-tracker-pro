@@ -1,31 +1,21 @@
-# Build Your APK (Mobile App)
+# 🚀 Final Build Instructions
 
-Since you don't have a computer, you can build your APK directly on the cloud using **Expo EAS**.
+I have fixed the code errors that were causing the build to fail (specifically the ESM module conflict and the plugin loading error).
 
-## Step 1: Get your Expo Access Token
-1. Go to [expo.dev](https://expo.dev) and log in.
-2. Go to **User Settings** -> **Access Tokens**.
-3. Create a new token and copy it.
+### 1. **Check Your Build Link**
+Click here to see your builds: 
+👉 **[Your Expo Build Dashboard](https://expo.dev/accounts/shimu311/projects/routine-tracker-pro-/builds)**
 
-## Step 2: Trigger the Build
-If you provide your token to me, I can attempt to run the command for you. Alternatively, you can use a "GitHub to Expo" connection:
-1. Push this project to a **GitHub repository**.
-2. Linking your GitHub account to [Expo](https://expo.dev).
-3. Select your repository and click **Build**.
+### 2. **Start a New Build**
+On the website page linked above, click **"Start Build"** or **"Build"** and follow these steps:
+- **Platform**: Android
+- **Profile**: `production` (⚠️ **CRITICAL**: Ensure there are NO spaces at the end of the word `production`. If you type `production ` with a space, it will fail!)
+- **Type**: APK (This is already set in my code, so it should be the default).
 
-## Step 3: Download the APK
-Once the build is complete (usually takes 5-10 minutes), Expo will provide a QR code and a direct download link for the `.apk` file.
+### 3. **What I Fixed:**
+- ✅ **ESM Conflict**: Removed `"type": "module"` which was crashing the build server.
+- ✅ **Plugin Errors**: Removed manual plugin entries that were causing resolution failures.
+- ✅ **Build Type**: Ensured `eas.json` is configured to output an `.apk` file instead of an `.aab`.
+- ✅ **Dependencies**: Cleaned up `package.json` to match Expo SDK 51 standards.
 
----
-
-### Troubleshooting Common Errors:
-1. **"Missing build profile in eas.json: 'production '"**: 
-   - **CRITICAL**: Look at the error message carefully. If there is a space after "production" (e.g. `'production '`), it means you accidentally typed a space in the **EAS Build profile** box in the Expo Dashboard.
-   - **Fix**: Re-type `production` in the box and ensure there are NO spaces at the end.
-2. **"Install dependencies failed"**:
-   - I have fixed `package.json` (removed `type: module` which was likely causing the plugin error) and cleaned up conflicts. 
-   - Please push the latest code and try building again.
-- **Name**: Routine Tracker
-- **Slug**: routine-tracker
-- **Version**: 1.0.0
-- **Energetic Theme**: Blue/Indigo Student focused.
+**Please wait for the current build to finish or cancel it, and start a FRESH build with the new code.** Once it finishes, you will see a **"Download"** button directly on that Expo page to get your APK!
