@@ -36,4 +36,3 @@ jobs:
         with:
           name: app-release-apk
           path: app-release.apk
-apk
