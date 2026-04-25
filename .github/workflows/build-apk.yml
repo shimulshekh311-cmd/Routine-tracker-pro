@@ -32,7 +32,12 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: 📦 Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: 🧹 Clean and Prebuild
+        run: |
+          rm -rf android
+          npx expo prebuild --platform android --no-install
 
       - name: 🚀 Build APK
         run: eas build --platform android --profile production --non-interactive --local --output=app-release.apk

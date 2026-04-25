@@ -8,7 +8,9 @@ Since your Expo account has reached the free build limit for this month, you can
 3. Click on the **"Actions"** tab at the top.
 4. On the left sidebar, click **"Build APK"**.
 5. Click the **"Run workflow"** button (on the right).
-6. **Wait about 10-15 minutes.** Once it finishes, the APK will be available for download in the "Artifacts" section at the bottom of the build page.
+6. **Wait about 10-15 minutes.**
+7. Once finished (Green checkmark ✅), scroll down to the bottom of the page to the **"Artifacts"** section.
+8. Click **"app-release-apk"** to download your file!
 
 #### **⚠️ Important Setup (Do this once):**
 - In your GitHub Repository: Go to **Settings** -> **Secrets and variables** -> **Actions**.
