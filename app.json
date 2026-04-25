@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "Routine Tracker",
-    "slug": "routine-tracker",
+    "owner": "shimu311",
+    "slug": "routine-tracker-pro-",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +28,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": []
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "a6d21292-4c36-49a6-b5d6-da4772a144ca"
+      }
+    }
   }
 }
