@@ -8,7 +8,8 @@ import {
   SafeAreaView, 
   TextInput,
   Dimensions,
-  Vibration
+  Vibration,
+  Platform
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Haptics from 'expo-haptics';

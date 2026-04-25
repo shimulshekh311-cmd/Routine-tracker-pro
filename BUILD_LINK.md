@@ -18,7 +18,12 @@ Once the build is complete (usually takes 5-10 minutes), Expo will provide a QR 
 
 ---
 
-### Application Details:
+### Troubleshooting Common Errors:
+1. **"Missing build profile in eas.json: 'production '"**: 
+   - This happens if you accidentally typed a **space** after "production" in the Expo UI.
+   - **Fix**: Re-type `production` in the EAS Build profile box and make sure there are NO spaces at the end.
+2. **"Yarn install failed"**:
+   - I have cleaned up the dependencies in `package.json` to make the build more stable. Make sure you are using the latest code.
 - **Name**: Routine Tracker
 - **Slug**: routine-tracker
 - **Version**: 1.0.0

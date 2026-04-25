@@ -22,9 +22,7 @@
     "expo-haptics": "~13.0.1",
     "expo-notifications": "~0.28.14",
     "expo-keep-awake": "~13.0.2",
-    "@expo/vector-icons": "^14.0.0",
-    "lucide-react": "^0.475.0",
-    "motion": "^12.4.3"
+    "@expo/vector-icons": "^14.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
