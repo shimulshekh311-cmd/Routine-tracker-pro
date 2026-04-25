@@ -13,11 +13,14 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.fatima.lifemanager"
+      "package": "com.fatima.lifemanager",
+      "permissions": ["NOTIFICATIONS", "VIBRATE"]
     },
     "web": {
     },
-    "plugins": [],
+    "plugins": [
+      "expo-notifications"
+    ],
     "extra": {
       "eas": {
         "projectId": "a6d21292-4c36-49a6-b5d6-da4772a144ca"
