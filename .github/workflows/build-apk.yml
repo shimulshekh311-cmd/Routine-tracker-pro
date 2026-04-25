@@ -19,6 +19,12 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: 🏗 Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
       - name: 🏗 Setup EAS
         uses: expo/expo-github-action@v8
         with:
