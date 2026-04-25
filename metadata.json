@@ -1,0 +1,6 @@
+{
+  "name": "Routine Tracker",
+  "description": "An energetic, student-focused routine tracker with Pomodoro, Habits, and Typing Practice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["offline-storage", "timers", "habit-tracking"]
+}
